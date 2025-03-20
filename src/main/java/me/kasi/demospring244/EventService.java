@@ -1,10 +1,14 @@
 package me.kasi.demospring244;
 
-public interface EventService {
+import org.springframework.lang.NonNull;
+import org.springframework.stereotype.Service;
 
-    void createEvent();
+@Service
+public class EventService {
 
-    void pulishEvent();
+    @NonNull
+    public String createEvent(@NonNull String name){
+        return null;
+    }
 
-    void deleteEvent();
 }
